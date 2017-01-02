@@ -1,4 +1,9 @@
 <?php
+include_once "config.php";
+
+spl_autoload_register(function ($class) {
+    include_once "$class.php";
+});
 ?>
 
 <!DOCTYPE html>
